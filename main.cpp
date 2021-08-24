@@ -36,6 +36,14 @@ int main() {
           << it->first << "->" << it->second ;
       
     cout << endl ;
+
+    for (it = usuarios.begin(); it != usuarios.end(); ++it) {
+        if(it -> second == "Maria"){
+          cout << "Usuário " << it->second << " encontrado com CPF: " << it->first << endl;
+        }
+    }
+    cout << endl;
+
   
     return 0;
 }
